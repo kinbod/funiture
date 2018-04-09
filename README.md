@@ -1,5 +1,9 @@
 # Funiture
 
+## 个人在线课程推荐
+* [Java并发编程与高并发解决方案](http://coding.imooc.com/class/195.html)：http://coding.imooc.com/class/195.html 
+* [Java开发企业级权限管理系统](http://coding.imooc.com/class/149.html)：http://coding.imooc.com/class/149.html 
+
 ## 项目需要
 * JDK 1.8及以上
 * Maven 管理jar包
@@ -52,13 +56,14 @@
 ## 其他[必看]
 * 强烈建议使用Intellij IDEA作为开发工具，eclipse需要手动做些设置才能正常使用, 项目启动要加载Resources包括：resources和resource.dev(或prod,区分环境选择）
 * 项目中log基本都使用@Slf4j提供，需要开发工具支持Lombok插件，相关注解包括：@Getter，@Setter，@ToString，@AllArgsConstuctor, @NoArgsConstructor,@Builder
-* 前台页面是从别的网站扒下来的，没任何价值，建议直接访问 /admin/page.do（目前默认跳转这个地址） 进入后台, 用户的密码只是普通做了md5加密，登录细节参考LoginServlet.java里实现
-* 如果不想使用redis，可以手动调整一下代码：applicationContext.xml、RedisPool.java、SysCacheService.java 里注掉掉redis的配置和spring管理
-* sql重新给了一下,直接导出本地的数据库表及数据, 可使用kanwangzjm@gmail.com/123456登录
-* 个别功能只适合单机，比如动态修改quartz调度、qps控制等
-* 如有问题，可加微信沟通，个人微信号：kanwangzjm，添加时请注明来自github
+* 可直接访问 /admin/page.do 进入后台, 用户的密码只是普通做了md5加密，登录细节参考LoginServlet.java里实现
+* 如有问题，可加微信沟通，个人微信公众号：TechDevPro ，课程里一些技术讲解会在公众号
+
+![avatar](https://github.com/kanwangzjm/funiture/blob/master/qrcode_258.jpg)
 
 ## 近期计划
 * 在之前切库的基础上, 做动态切库(分库)操作
 * mybatis层的分表操作, 借助org.shardbatis包的com.google.code.shardbatis.plugin.ShardPlugin
 * 完成主备操作, 借助org.apache.curator包选择zk leader
+
+
